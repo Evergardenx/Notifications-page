@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+:root {
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --Very_light_grayish_blue: hsl(210, 60%, 98%);
+    --Light_grayish_blue1: hsl(211, 68%, 94%);
+    --Light_grayish_blue2: hsl(205, 33%, 90%);
+    --Grayish_blue: hsl(219, 14%, 63%);
+    --Dark_grayish_blue: hsl(219, 12%, 42%);
+    --Very_dark_blue: hsl(224, 21%, 14%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+background-color:var(--Light_grayish_blue1) ;
+font-size: 16px; 
+max-width: 1440px;
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+main{
+    gap: 10px;
+    background-color: var(--White);
+    width: 60%;
+    padding: 1rem 3rem;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    margin: 5%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+    
+img{margin: 1rem; width: 10%; float: left;}
+
+header p:first-child{font-size: 20px ; font-weight: 800;}
+
+.alert{
+    padding: 0 10px; color: var(--White);
+    background-color: var(--Blue);
+    border-radius: 5px;
+}
+
+main div{border-radius: 5px;}
+
+span{font-weight: 800;}
+
+small{color:  var(--Grayish_blue);}
+
+
+main div div{line-height: 1rem;}
+
+fieldset{border-radius:  5px; margin: 1rem; padding: 1rem 2rem;}
+
+fieldset:hover{background-color: var(--Light_grayish_blue1);}
+
+.club{color: var(--Blue);}
+.event{color:  var(--Dark_grayish_blue);}
+.chess{float: right;}
+
+.kim{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.kim div img{width: 20%;}
+
+.kim p{width: 160%;}
+
+
+.jacob,
+.angela,
+.mark{background-color: var(--Light_grayish_blue1);}
+
+.span:hover:not(.alert){color: var(--Blue);}
+
+.dot{
+    margin-left: 10px;
+    height: 10px;
+    width: 10px;
+    background-color: var(--Red);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+main div{
+    cursor: pointer;
+}
+
+.toogle:hover{cursor: pointer; color: var(--Blue);}
+
+@media screen and (max-width:800px) {
+
+   body{
+    background-color: var(--White);
+    font-size: 14px;
+    max-width: auto;
+    min-width: 375px;
+       }
+   main{
+        gap: 5px;
+        width: 100%;
+        padding: 1rem 0;
+       }
+    .kim p{  width: auto;  }
+
+    .kim div div, #Nat div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .kim div img, .kim img{width: 15%;}
+
+    header{align-items: center;}
+
+}
